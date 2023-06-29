@@ -1,0 +1,892 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+/*-------------------------------------BOTAO DE TOOPO----------------------------- */
+
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: #000000;
+    border: 2px solid #FF0077;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-top-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+:root {
+    --cor-principal: #FF0077;
+    --cor-secundaria: #000
+}
+
+
+body {
+    background-color: #1d1d1d;
+}
+
+
+
+
+.container1{
+    background-color: #000000;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    padding-right: 15px;
+}
+
+.flex1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li a{
+    color: #ff0077;
+    text-decoration: none;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #ff0077;
+}
+
+header ul li{
+    display:inline-block;
+}
+
+header a img {
+    width: 60px;
+    
+   
+}
+
+header a img:hover{
+  
+    background-color: #ffffff;
+    border-radius: 150px;
+    transition: 1s;
+}
+
+button{    
+    height: 65px;
+    padding: 5px 5px;
+    background: transparent;
+    border: 2px solid ;
+    color:transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#capa {
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    width: 100%;
+    height: 15cm;
+    position: relative;
+}
+
+.conteudo {
+
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, #000 100%);
+}
+
+.legenda {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin-bottom: 160px;
+    margin-left: 60vh;
+    font-size: 90px;
+
+}
+
+h1 {
+
+    color: #FF0077;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    font-family: 'Righteous', cursive;
+
+}
+
+
+/* HEADER */
+
+
+
+/* MENU LATERAL */
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: black;
+    padding: 100px 0px 30px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: scroll;
+    padding-left: 5px;
+    z-index: 10;
+}
+
+nav.menu-lateral.expandir {
+    width: 350px;
+}
+
+.btn-expandir {
+    width: auto;
+
+}
+
+.btn-expandir>i {
+    color: #FF0077;
+    cursor: pointer;
+    font-size: 70px;
+
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 1s;
+}
+
+ul li.ativo {
+    background-color: #392b38;
+}
+
+ul li.item-menu:hover {
+    background-color: #ff00775f;
+
+}
+
+ul li.item-menu a:hover {
+    color: black;
+    transition: 1s;
+}
+
+ul li.item-menu a {
+    color: #Ff0077;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .text-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 1.87rem;
+}
+
+ul li.item-menu a .im {
+    width: 40px;
+}
+
+/*SISTEMA DE CARDS*/
+
+a {
+    text-decoration: none;
+}
+
+.cartao {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 8rem 8rem 0 0;
+
+}
+
+.cartao2 {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4rem 8rem 4rem 0;
+}
+
+.cartao3 {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 0 8rem 4rem 0;
+}
+
+
+.card {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://sm.ign.com/ign_br/screenshot/default/image002_uuhb.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card2 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://uploads.jovemnerd.com.br/wp-content/uploads/2020/08/theflashposter__tgc6mby.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+
+.card3 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/05/indiana-jones-and-the-dial-of-destiny-poster.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card4 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://www.atoupeira.com.br/wp-content/uploads/2023/05/oppenheimer-novo-poster.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card5 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://tracklist.com.br/wp-content/uploads/2023/04/image-819x1024.png) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card6 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://portalpopline.com.br/wp-content/uploads/2023/03/missao-impossivel-7-poster.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card7 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://cafecomnerd.com.br/wp-content/uploads/2023/05/Megatubarao-2-Poster-de-Meg-2-The-Trench-estrelado-por-Jason-Statham-e-Wu-Jing.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card8 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://assets-prd.ignimgs.com/2023/03/06/tmnt-poster-1678114083916.jpeg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.card9 {
+    margin-left: 90px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(https://observatoriodocinema.uol.com.br/wp-content/uploads/2023/06/FyHOasoWAAIEWKu.jpeg) no-repeat center;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.event-info {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "empty title title"
+        "info info action";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 20px;
+}
+
+.event-info * {
+    position: relative;
+}
+
+.title {
+    text-transform: uppercase;
+    grid-area: title;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.additional-info {
+    grid-area: info;
+}
+
+.additional-info p {
+    font-size: 1rem;
+    margin-top: 8px;
+    letter-spacing: 0.7px;
+}
+
+.price {
+    position: absolute;
+    top: -20%;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #ff0077;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.event-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 300%;
+    background: linear-gradient(to bottom, #ff00b2 0%, #e6cfdb 51%, #d210c2 100%);
+    transform: rotate(-8deg);
+    border-top-right-radius: 100px;
+}
+
+.action {
+    background-color: transparent;
+    border: #ffffff 2px solid;
+    width: 100px;
+    font-size: 18px;
+    grid-area: action;
+    padding: 0.10rem;
+    border-radius: 10px;
+}
+
+/*SISTEMA DE CARDS*/
+
+::-webkit-scrollbar {
+    background-color: black;
+    border: #FF0077 solid 1px;
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF0077;
+}
+
+.icones {
+    width: 50px;
+}
+
+/* FOOTER */
+
+footer {
+
+    bottom: 0vh;
+    margin-top: 10vh;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #e8175d, #cc527a); */
+}
+
+footer li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer .links,
+.copy {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-self: center;
+}
+
+footer a,
+footer ol {
+    color: white;
+    text-decoration: none;
+}
+
+#redes {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+#redes:hover {
+
+    transition: 0.5s;
+}
+
+.copy {
+    background-image: linear-gradient(to left, #260016, #FF0077);
+    width: 100%;
+    border-top-left-radius: 50%;
+}
+
+.logo {
+    font-family: 'Simply Rounded', sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    transition: all 2s;
+}
+
+.copy p {
+    font-weight: 500;
+}
+
+#up {
+    color: #FF0077;
+}
+
+.menuzinho {
+    height: 100%;
+    display: none;
+}
+
+@media (max-width:1200px) {
+
+    nav.menu-lateral {
+        display: none;
+    }
+
+    .go-top-btn {
+        display: none;
+    }
+
+    .contato {
+        display: none;
+    }
+
+    .btn-expandir {
+        display: none;
+    }
+
+    .conteudo {
+        display: none;
+    }
+
+    header {
+        padding: 3rem;
+    }
+
+    header nav {
+        text-align: center;
+        margin-left: 30rem;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        padding: 1rem 0 0 0;
+    }
+
+    .cartao2 {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .cartao3 {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        padding: 1rem 0 10rem 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .esporte img {
+        width: 100px;
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+    }
+
+    .teatro img {
+        width: 100px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .musica img {
+        width: 100px;
+    }
+
+    .cinema {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .cinema img {
+        width: 100px;
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+    }
+
+    .nsei img {
+        width: 100px;
+    }
+
+    .games {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .games img {
+        width: 100px;
+    }
+
+}
+
+@media (max-width:720px) {
+
+    header nav {
+        text-align: center;
+        margin-left: 15rem;
+    }
+
+    .menu-lateral {
+        display: none;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        padding: 1rem 3rem 0 0;
+    }
+
+    .cartao2 {
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        padding: 1rem 3rem 1rem 0;
+    }
+
+    .cartao3 {
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        padding: 1rem 3rem 1rem 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .cinema {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+}
+
+@media (max-width:520px) {
+    nav.menu-lateral {
+        display: none;
+    }
+
+    header nav {
+        text-align: center;
+        margin-left: 9rem;
+    }
+
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 1rem 4rem 0 0;
+    }
+
+    .cartao2 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 1rem 4rem 1rem 0;
+    }
+
+    .cartao3 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 1rem 4rem 1rem 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .cinema {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+}

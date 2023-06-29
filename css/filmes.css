@@ -1,0 +1,613 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav ul li a{
+    font-size: 2.5rem;
+}
+
+h2{
+    text-transform: uppercase;
+}
+        
+.aranha {
+    width: 100%;
+    height: 400px;
+    filter: drop-shadow(10px 0 100px #000);
+    opacity: 0.5;
+    box-shadow: 22px 22px 22px 22px rgb(0, 0, 0);
+}
+
+.informacoes {
+    display: flex;
+    justify-content: left;
+    padding: 110px;
+    text-transform: uppercase;
+}
+
+.container{
+    padding-left: 50px;
+}
+
+.poster {
+    width: 200px;
+}
+
+.detail{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.trailer{
+    width: 100px;
+    margin: 10px;
+}
+
+#show-or-datails{
+    width: 10rem;
+    margin-top: 10px;
+    color: #ff0077;
+    background-color: transparent;
+    border: #ff0077 solid 2px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#show-or-hide{
+    width: 10rem;
+    margin: 10px;
+    color: #ff0077;
+    background-color: transparent;
+    border: #ff0077 solid 2px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.containerT{
+    width: 100%;
+    height: 400px;
+    filter: drop-shadow(10px 0 100px #000);
+    box-shadow: 22px 22px 22px 22px rgb(0, 0, 0);
+    display: none;
+}
+
+.textoEs{
+    background-color: #ff0077;
+    text-align: left;
+    font-size: 22px;
+    padding: 15px;
+    display: none;
+    border-radius: 20px;
+}
+
+@media (max-width:1200px) {
+
+    nav.menu-lateral {
+        display: none;
+    }
+
+    .contato{
+        display: none;
+    }
+
+    header nav{
+        text-align: center;
+        margin-left: 7rem;
+        padding: 2rem;
+    }
+
+    .btn-expandir{
+        display: none;
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+
+    .aranha {
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .pequeno {
+        font-size: 5rem;
+        margin-left: 16rem;
+    }
+
+    .india{
+        font-size: 5rem;
+        margin-left: 10rem;
+    }
+
+    .opp{
+        font-size: 5rem; 
+        margin-left: 10rem;
+    }
+
+    .barb{
+        font-size: 5rem; 
+        margin-left: 20rem;
+    }
+
+    .impossi{
+        font-size: 3.5rem; 
+        margin-left: 10rem;
+    }
+
+    .mega{
+        font-size: 4rem; 
+        margin-left: 12rem;
+    }
+
+    .nukenin{
+        font-size: 3.5rem; 
+        margin-left: 10rem;
+    }
+
+    .vermelho{
+        font-size: 5rem; 
+        margin-left: 10rem;
+    }
+
+    .informacoes{
+        width: 100%;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #show-or-datails{
+        width: 30rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    #show-or-hide{
+        width: 30rem;
+        height: 5rem;
+        margin-left: 0rem;
+        font-size: 2rem;
+    }
+
+    .poster{
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .textoEs{
+        width: 30rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+       
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black; 
+    }
+
+    .esporte img{
+        width: 100px;
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+    }
+
+    .teatro img{
+        width: 100px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .musica img{
+        width: 100px;
+    }
+
+    .cinema { 
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .cinema img{
+        width: 100px;
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+    }
+
+    .nsei img{
+        width: 100px;
+    }
+
+    .games {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+    }
+
+    .games img{
+        width: 100px;
+    }
+}
+
+@media (max-width:720px) {
+
+    nav.menu-lateral {
+        display: none;
+    }
+
+    .contato{
+        display: none;
+    }
+
+
+    .btn-expandir{
+        display: none;
+    }
+
+    iframe{
+        width: 118%;
+        height: 35rem;
+    }
+
+    .aranha {
+        width: 118%;
+        height: 35rem;
+    }
+
+    h2{
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align:left;
+        
+    }
+
+    .pequeno {
+        font-size: 5rem;
+        margin-left: 8rem;
+    }
+
+    .india{
+        font-size: 5rem;
+        margin-left: 3rem;
+    }
+
+    .opp{
+        font-size: 5rem; 
+        margin-left: 4rem;
+    }
+
+    .barb{
+        font-size: 5rem; 
+        margin-left: 14rem;
+    }
+
+    .impossi{
+        font-size: 3.5rem; 
+        margin-left: 4rem;
+    }
+
+    .mega{
+        font-size: 4rem; 
+        margin-left: 5rem;
+    }
+
+    .nukenin{
+        font-size: 3.5rem; 
+        margin-left: 4rem;
+    }
+
+    .vermelho{
+        font-size: 5rem; 
+        margin-left: 4rem;
+    }
+
+    .informacoes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #show-or-datails{
+        width: 38rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    #show-or-hide{
+        width: 38rem;
+        height: 5rem;
+        margin-left: 0rem;
+        font-size: 2rem;
+    }
+
+    .poster{
+        width: 45rem;
+        height: 50rem;
+        padding-right: 3rem;
+    }
+
+    .textoEs{
+        width: 30rem;
+        margin-top: 2rem;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+       
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+      
+
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+    .cinema { 
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+}
+
+
+@media (max-width:520px) {
+
+    nav.menu-lateral {
+        display: none;
+    }
+
+    .contato{
+        display: none;
+    }
+
+    .container{
+        text-align: left;
+    }
+
+    header nav{
+        text-align: center;
+        margin-left: 3rem;
+        padding: 4rem;
+    }
+
+    .btn-expandir{
+        display: none;
+    }
+
+    iframe{
+        width: 157%;
+        height: 35rem;
+    }
+
+    .aranha {
+        width: 157%;
+        height: 35rem;
+    }
+
+    h2{
+        font-size: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align:left;
+    }
+
+    .pequeno {
+        font-size: 5rem;
+        margin-left: 5rem;
+    }
+
+    .india{
+        font-size: 5rem;
+    }
+
+    .opp{
+        font-size: 5rem; 
+    }
+
+    .barb{
+        font-size: 5rem; 
+        margin-left: 10rem;
+    }
+
+    .impossi{
+        font-size: 3.5rem; 
+    }
+
+    .mega{
+        font-size: 4rem; 
+        margin-left: 3rem;
+    }
+
+    .nukenin{
+        font-size: 3.5rem; 
+    }
+
+    .vermelho{
+        font-size: 5rem; 
+    }
+
+    .informacoes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #show-or-datails{
+        width: 38rem;
+        height: 8rem;
+        font-size: 3rem;
+    }
+
+    #show-or-hide{
+        width: 38rem;
+        height: 8rem;
+        margin-left: 0rem;
+        font-size: 3rem;
+    }
+
+    .poster{
+        width: 45rem;
+        height: 50rem;
+        padding-right: 5rem;
+    }
+
+    .textoEs{
+        width: 38rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .menuzinho {
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 5px;
+       
+    }
+
+    .esporte {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+      
+
+    }
+
+    .teatro {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: aqua;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .musica {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+    .cinema { 
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+
+    }
+
+    .nsei {
+        margin-top: 4px;
+        margin-left: 10px;
+        background-color: chartreuse;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+}
+
